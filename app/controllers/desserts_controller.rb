@@ -43,7 +43,7 @@ class DessertsController < ApplicationController
   private
 
   def is_logged_in
-    cookies[:can_has] == "yarly"
+    cookies[:can_access] == "yeah"
   end
 
 end

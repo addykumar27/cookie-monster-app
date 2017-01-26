@@ -45,10 +45,10 @@ function eraseCookie(name) {
 
 $(function(){
   console.log("document.cookie =>", document.cookie);
-  var can_has = readCookie('can_has');
+  var can_access = readCookie('can_access');
   var fav_color = readCookie('fav_color');
 
-  console.log("Cookie: can_has => ", can_has);
+  console.log("Cookie: can_access => ", can_access);
   console.log("Cookie: fav_color => ", fav_color);
 
   $('body').css("background-color", fav_color || "white" );
@@ -71,10 +71,10 @@ $(function(){
     }
 
     if (window.CHALLENGE_1_DONE) {
-      if(can_has !== "yarly" ){
+      if(can_access !== "yeah" ){
         $('body').append(
             $("<h2>", {text: "Challenge 2: Unlock the dessert Show pages!"} ),
-            $("<p>", {text: "> Create a cookie 'can_has=yarly' that will trick the server into thinking you're logged in!"} ),
+            $("<p>", {text: "> Create a cookie 'can_access=yeah' that will trick the server into thinking you're logged in!"} ),
             $("<p>", {text: "> See redirect in `desserts_controller#show`"} )
         );
       } else {
