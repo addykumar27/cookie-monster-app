@@ -19,7 +19,7 @@ rails s
 To begin, visit `http://localhost:3000/desserts` in your browser, with the Chrome Console open.
 
 1. Use the Chrome Console to manually set a cookie for the website to: `fav_color=blue`. When you refresh the page, a script running on the page will detect the color and apply it to the background of the page.
-2. Manually add a second cookie (`can_has=yarly`) so that you can access the 3 `desserts#show` pages (`/desserts/1`, `/desserts/2`, `/desserts/3`).
+2. Manually add a second cookie (`can_access=yeah`) so that you can access the 3 `desserts#show` pages (`/desserts/1`, `/desserts/2`, `/desserts/3`).
   * The server is actually checking for this cookie in the HTTP Request Headers (see the `desserts#show` controller). Without this cookie, you will be blocked (redirected) from viewing all dessert pages!
 3. When a user clicks "Save as Favorite" on a `desserts#show` page, store the dessert id in the user's session. (See `app/controllers/desserts_controller.rb`)
 4. Modify the `desserts#show` view to indicate whether the dessert shown is the user's favorite dessert (See `app/controllers/desserts_controller.rb` and `app/views/desserts/show.html.erb`).
