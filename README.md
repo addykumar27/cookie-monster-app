@@ -26,14 +26,14 @@ To begin, visit `http://localhost:3000/desserts` in your browser, with the Chrom
   * How would you compare the current_dessert to the user's favorite dessert? Can you use this comparison to create a "conditional view"?
 5. Stretch: Can you DRY up the controller code by using a `before_action` to check whether the user is logged in?
 
-> Pay special attention to `Resources > Cookies > localhost` in the Developer Console. The Cookies-view allows you to browse and delete cookies associated with the current domain.
+> Pay special attention to the `Application > Cookies > http://localhost:3000` tab in your Chrome Developer Console. The Cookies-view allows you to view and delete cookies associated with the current domain.
 
 #### Take Away
 **What's the difference between a cookie and a session?**
 
 By the end of this lab you should be able to explain how and why these cookies are present in your browser:
 
-<img width="735" alt="screen shot 2016-01-11 at 7 30 58 pm" src="https://cloud.githubusercontent.com/assets/1489337/12254093/06d8244a-b89a-11e5-8e6d-3c68c8e279b2.png">
+<img width="767" alt="screen shot 2017-03-09 at 9 38 36 am" src="https://cloud.githubusercontent.com/assets/1489337/23762877/5a71b454-04ac-11e7-8d35-04c77f478837.png">
 
 
 #### Resources
