@@ -15,7 +15,7 @@ rails s
 
 > Note: This rails application does not use a database or turbolinks.
 
-####Challenges
+#### Challenges
 To begin, visit `http://localhost:3000/desserts` in your browser, with the Chrome Console open.
 
 1. Use the Chrome Console to manually set a cookie for the website to: `fav_color=blue`. When you refresh the page, a script running on the page will detect the color and apply it to the background of the page.
