@@ -7,4 +7,9 @@
 </br>
 
 <!-- CHANGE THIS link to reflect whether the dessert has already been favorited -->
-<%= button_to "Save as Favorite", save_as_favorite_path(@dessert.id) %>
+
+<% if @dessert.id == @favorite_dessert_id %>
+  <h2>THIS IS MY FAVORITE DESSERT!!!</h2>
+<% else %>
+  <%= button_to "Save as Favorite", save_as_favorite_path(@dessert.id) %>
+<% end %>
